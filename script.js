@@ -4,6 +4,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   alert("Login Successful!");
 });
 
+eval("alert('unsafe code')");
+
 function logout() {
   alert("Logged Out!");
 }
