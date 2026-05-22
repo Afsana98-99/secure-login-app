@@ -1,0 +1,22 @@
+name: Secure Login App CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Step
+        run: echo "Building Secure Login App"
+
+      - name: Test Step
+        run: echo "Testing Application"
+
+      - name: Deploy Step
+        run: echo "Deploying Application"
